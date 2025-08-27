@@ -1,1 +1,146 @@
-{"specVersion":"1.0.0","groups":[],"steps":[],"actors":[],"connections":{"steps":[],"actors":[]}}
+{
+  "specVersion": "1.0.0",
+  "groups": [],
+  "steps": [
+    {
+      "id": "step-1756314076725",
+      "type": "step",
+      "name": "Wake up",
+      "description": null,
+      "actorId": null,
+      "actorType": null,
+      "layout": {
+        "width": null,
+        "height": null,
+        "x": 233.70984889551426,
+        "y": 202.58567829867513,
+        "zIndex": 0,
+        "color": null
+      },
+      "parentId": null,
+      "parentType": null,
+      "path": null,
+      "inputs": [],
+      "outputs": [
+        {
+          "id": "out-data-1756314076725",
+          "type": "data",
+          "name": "Data",
+          "wait": false
+        }
+      ],
+      "checksums": {
+        "metadata": "e3d8de983ec5e760251863179f3feef1a60c06e411a360d61b977760ccef27c8"
+      }
+    },
+    {
+      "id": "step-1756314082618",
+      "type": "step",
+      "name": "Brush teeth",
+      "description": null,
+      "actorId": null,
+      "actorType": null,
+      "layout": {
+        "width": null,
+        "height": null,
+        "x": 648.1235501890076,
+        "y": 205.57564210115183,
+        "zIndex": 0,
+        "color": null
+      },
+      "parentId": null,
+      "parentType": null,
+      "path": null,
+      "inputs": [
+        {
+          "id": "in-data-1756314082618",
+          "type": "data",
+          "name": "Data",
+          "wait": false
+        }
+      ],
+      "outputs": [
+        {
+          "id": "out-data-1756314082618",
+          "type": "data",
+          "name": "Data",
+          "wait": false
+        }
+      ],
+      "checksums": {
+        "metadata": "2859a5b90f932f2b97f0257552c9ea33ddcb59cde3267033505114d24ef0ac6f"
+      }
+    },
+    {
+      "id": "step-1756314092369",
+      "type": "step",
+      "name": "Eat food",
+      "description": null,
+      "actorId": null,
+      "actorType": null,
+      "layout": {
+        "width": null,
+        "height": null,
+        "x": 1043.9095206351021,
+        "y": 210.78904730502245,
+        "zIndex": 0,
+        "color": null
+      },
+      "parentId": null,
+      "parentType": null,
+      "path": null,
+      "inputs": [
+        {
+          "id": "in-data-1756314092369",
+          "type": "data",
+          "name": "Data",
+          "wait": false
+        }
+      ],
+      "outputs": [
+        {
+          "id": "out-data-1756314092369",
+          "type": "data",
+          "name": "Data",
+          "wait": false
+        }
+      ],
+      "checksums": {
+        "metadata": "0b052ba9effca231d147716cd9571dec97e69969f8ec113e36a418591229a2c8"
+      }
+    }
+  ],
+  "actors": [],
+  "connections": {
+    "steps": [
+      {
+        "id": "step-1756314076725-out-data-1756314076725-step-1756314082618-in-data-1756314082618",
+        "type": "data",
+        "source": {
+          "stepId": "step-1756314076725",
+          "portId": "out-data-1756314076725"
+        },
+        "target": {
+          "stepId": "step-1756314082618",
+          "portId": "in-data-1756314082618"
+        }
+      },
+      {
+        "id": "step-1756314082618-out-data-1756314082618-step-1756314092369-in-data-1756314092369",
+        "type": "data",
+        "source": {
+          "stepId": "step-1756314082618",
+          "portId": "out-data-1756314082618"
+        },
+        "target": {
+          "stepId": "step-1756314092369",
+          "portId": "in-data-1756314092369"
+        }
+      }
+    ],
+    "actors": []
+  },
+  "checksums": {
+    "metadata": "50a0a70dd87ece4d6c011cfcdd4ce45c5edf9140534839729d6c84bb71e4c7a6"
+  }
+}
