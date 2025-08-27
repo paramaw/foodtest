@@ -2,21 +2,6 @@
   "specVersion": "1.0.0",
   "groups": [
     {
-      "id": "note-1756314289026",
-      "type": "note",
-      "name": null,
-      "description": "At home",
-      "layout": {
-        "width": 791.0,
-        "height": 393.0,
-        "x": 135.79407791809194,
-        "y": 102.70826931816961,
-        "zIndex": 0,
-        "color": "#f6d32d"
-      },
-      "parentId": null
-    },
-    {
       "id": "note-1756314309373",
       "type": "note",
       "name": null,
@@ -28,6 +13,21 @@
         "y": 46.96710370667964,
         "zIndex": 0,
         "color": "#4caf50"
+      },
+      "parentId": null
+    },
+    {
+      "id": "note-1756314289026",
+      "type": "note",
+      "name": null,
+      "description": "At home",
+      "layout": {
+        "width": 791.0,
+        "height": 393.0,
+        "x": 135.79407791809194,
+        "y": 102.70826931816961,
+        "zIndex": 0,
+        "color": "#f6d32d"
       },
       "parentId": null
     }
@@ -72,44 +72,6 @@
       }
     },
     {
-      "id": "step-1756314082618",
-      "type": "step",
-      "name": "Brush teeth",
-      "description": null,
-      "actorId": null,
-      "actorType": null,
-      "layout": {
-        "width": null,
-        "height": null,
-        "x": 442.05502634851746,
-        "y": 170.0185099977182,
-        "zIndex": 0,
-        "color": null
-      },
-      "parentId": "note-1756314289026",
-      "parentType": "note",
-      "path": null,
-      "inputs": [
-        {
-          "id": "in-data-1756314082618",
-          "type": "data",
-          "name": "Data",
-          "wait": false
-        }
-      ],
-      "outputs": [
-        {
-          "id": "out-data-1756314082618",
-          "type": "data",
-          "name": "Data",
-          "wait": false
-        }
-      ],
-      "checksums": {
-        "metadata": "958d1ddb24ee3a2532146fc6dcb2d2c51accc0c55b47a64918be4e3be8a854bb"
-      }
-    },
-    {
       "id": "step-1756314076725",
       "type": "step",
       "name": "Wake up",
@@ -138,6 +100,44 @@
       ],
       "checksums": {
         "metadata": "fb48429cf3d9e12cded6e48bd072d58823564ade14adc52b0447784ce57ee529"
+      }
+    },
+    {
+      "id": "step-1756314082618",
+      "type": "step",
+      "name": "Brush teeth",
+      "description": null,
+      "actorId": null,
+      "actorType": null,
+      "layout": {
+        "width": null,
+        "height": null,
+        "x": 442.05502634851746,
+        "y": 92.80716122216398,
+        "zIndex": 0,
+        "color": null
+      },
+      "parentId": "note-1756314289026",
+      "parentType": "note",
+      "path": null,
+      "inputs": [
+        {
+          "id": "in-data-1756314082618",
+          "type": "data",
+          "name": "Data",
+          "wait": false
+        }
+      ],
+      "outputs": [
+        {
+          "id": "out-data-1756314082618",
+          "type": "data",
+          "name": "Data",
+          "wait": false
+        }
+      ],
+      "checksums": {
+        "metadata": "958d1ddb24ee3a2532146fc6dcb2d2c51accc0c55b47a64918be4e3be8a854bb"
       }
     }
   ],
@@ -179,11 +179,11 @@
         }
       },
       {
-        "id": "step-1756314082618-out-data-1756314082618-step-1756314092369-in-data-1756314092369",
+        "id": "step-1756314076725-out-data-1756314076725-step-1756314092369-in-data-1756314092369",
         "type": "data",
         "source": {
-          "stepId": "step-1756314082618",
-          "portId": "out-data-1756314082618"
+          "stepId": "step-1756314076725",
+          "portId": "out-data-1756314076725"
         },
         "target": {
           "stepId": "step-1756314092369",
@@ -194,6 +194,6 @@
     "actors": []
   },
   "checksums": {
-    "metadata": "72df8db7261072ae99ca12bea59de57bb1b36eb2484727e2211040c003d531c7"
+    "metadata": "5a93303ac4650fa1c0aaca7fa3aad7d90ef953b80c76ec010995592138050058"
   }
 }
