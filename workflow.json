@@ -1,76 +1,38 @@
 {
   "specVersion": "1.0.0",
-  "groups": [],
+  "groups": [
+    {
+      "id": "note-1756314289026",
+      "type": "note",
+      "name": null,
+      "description": "At home",
+      "layout": {
+        "width": 791.0,
+        "height": 393.0,
+        "x": 135.79407791809194,
+        "y": 102.70826931816961,
+        "zIndex": 0,
+        "color": "#f6d32d"
+      },
+      "parentId": null
+    },
+    {
+      "id": "note-1756314309373",
+      "type": "note",
+      "name": null,
+      "description": "At restaurant",
+      "layout": {
+        "width": 400.0,
+        "height": 400.0,
+        "x": 1103.2250028395254,
+        "y": 46.96710370667964,
+        "zIndex": 0,
+        "color": "#4caf50"
+      },
+      "parentId": null
+    }
+  ],
   "steps": [
-    {
-      "id": "step-1756314076725",
-      "type": "step",
-      "name": "Wake up",
-      "description": null,
-      "actorId": null,
-      "actorType": null,
-      "layout": {
-        "width": null,
-        "height": null,
-        "x": 233.70984889551426,
-        "y": 202.58567829867513,
-        "zIndex": 0,
-        "color": null
-      },
-      "parentId": null,
-      "parentType": null,
-      "path": null,
-      "inputs": [],
-      "outputs": [
-        {
-          "id": "out-data-1756314076725",
-          "type": "data",
-          "name": "Data",
-          "wait": false
-        }
-      ],
-      "checksums": {
-        "metadata": "e3d8de983ec5e760251863179f3feef1a60c06e411a360d61b977760ccef27c8"
-      }
-    },
-    {
-      "id": "step-1756314082618",
-      "type": "step",
-      "name": "Brush teeth",
-      "description": null,
-      "actorId": null,
-      "actorType": null,
-      "layout": {
-        "width": null,
-        "height": null,
-        "x": 648.1235501890076,
-        "y": 205.57564210115183,
-        "zIndex": 0,
-        "color": null
-      },
-      "parentId": null,
-      "parentType": null,
-      "path": null,
-      "inputs": [
-        {
-          "id": "in-data-1756314082618",
-          "type": "data",
-          "name": "Data",
-          "wait": false
-        }
-      ],
-      "outputs": [
-        {
-          "id": "out-data-1756314082618",
-          "type": "data",
-          "name": "Data",
-          "wait": false
-        }
-      ],
-      "checksums": {
-        "metadata": "2859a5b90f932f2b97f0257552c9ea33ddcb59cde3267033505114d24ef0ac6f"
-      }
-    },
     {
       "id": "step-1756314092369",
       "type": "step",
@@ -81,13 +43,13 @@
       "layout": {
         "width": null,
         "height": null,
-        "x": 1043.9095206351021,
-        "y": 210.78904730502245,
+        "x": 45.31535950225816,
+        "y": 165.3835979521739,
         "zIndex": 0,
         "color": null
       },
-      "parentId": null,
-      "parentType": null,
+      "parentId": "note-1756314309373",
+      "parentType": "note",
       "path": null,
       "inputs": [
         {
@@ -106,11 +68,102 @@
         }
       ],
       "checksums": {
-        "metadata": "0b052ba9effca231d147716cd9571dec97e69969f8ec113e36a418591229a2c8"
+        "metadata": "cf90cf2d577068187e2fd58930f72eb5f37478914c46b47864028decad67dea5"
+      }
+    },
+    {
+      "id": "step-1756314082618",
+      "type": "step",
+      "name": "Brush teeth",
+      "description": null,
+      "actorId": null,
+      "actorType": null,
+      "layout": {
+        "width": null,
+        "height": null,
+        "x": 442.05502634851746,
+        "y": 170.0185099977182,
+        "zIndex": 0,
+        "color": null
+      },
+      "parentId": "note-1756314289026",
+      "parentType": "note",
+      "path": null,
+      "inputs": [
+        {
+          "id": "in-data-1756314082618",
+          "type": "data",
+          "name": "Data",
+          "wait": false
+        }
+      ],
+      "outputs": [
+        {
+          "id": "out-data-1756314082618",
+          "type": "data",
+          "name": "Data",
+          "wait": false
+        }
+      ],
+      "checksums": {
+        "metadata": "958d1ddb24ee3a2532146fc6dcb2d2c51accc0c55b47a64918be4e3be8a854bb"
+      }
+    },
+    {
+      "id": "step-1756314076725",
+      "type": "step",
+      "name": "Wake up",
+      "description": "Wake up now",
+      "actorId": "person-1756314273942",
+      "actorType": null,
+      "layout": {
+        "width": null,
+        "height": null,
+        "x": 46.38117730099708,
+        "y": 121.7405699341405,
+        "zIndex": 0,
+        "color": null
+      },
+      "parentId": "note-1756314289026",
+      "parentType": "note",
+      "path": null,
+      "inputs": [],
+      "outputs": [
+        {
+          "id": "out-data-1756314076725",
+          "type": "data",
+          "name": "Data",
+          "wait": false
+        }
+      ],
+      "checksums": {
+        "metadata": "fb48429cf3d9e12cded6e48bd072d58823564ade14adc52b0447784ce57ee529"
       }
     }
   ],
-  "actors": [],
+  "actors": [
+    {
+      "type": "personActor",
+      "id": "person-1756314273942",
+      "name": "Parama",
+      "description": "",
+      "role": "User",
+      "sourceId": null,
+      "layout": {
+        "width": null,
+        "height": null,
+        "x": 1117.918651711832,
+        "y": 538.7405559336339,
+        "zIndex": 0,
+        "color": null
+      },
+      "parentId": null,
+      "parentType": null,
+      "checksums": {
+        "metadata": "8ef520b3c4ed7b24df1da87b5a22a2d4a6723738aa7929fb3250d61f1c0dd238"
+      }
+    }
+  ],
   "connections": {
     "steps": [
       {
@@ -141,6 +194,6 @@
     "actors": []
   },
   "checksums": {
-    "metadata": "50a0a70dd87ece4d6c011cfcdd4ce45c5edf9140534839729d6c84bb71e4c7a6"
+    "metadata": "72df8db7261072ae99ca12bea59de57bb1b36eb2484727e2211040c003d531c7"
   }
 }
